@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page under construction</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="shortcut icon" href="../images/Web.png" type="images/png" />
+<style>
+.logoclass{
+	padding-top: 1%;
+	margin-left: 1%;
+	padding-bottom: 0%;
+}
+.logoclass h2{
+	font-size: 18px; 
+	color: white; 
+	margin-left: 40%;
+	position: absolute;
+	padding-top: 1%;
+	margin-top: 6%;
+	margin-left: 80%;
+}
+.logoclass h1{
+	color: white; 
+	margin-left: 40%;
+	position: absolute;
+	padding-top: 1%;
+}
+#imagecenter img{
+	margin-right: 20%;
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="logoclass">
+			<h1>Développement Web</h1>
+			<h2>Les rendu de AYAD Ishak</h2>
+			<a href="https://www.u-cergy.fr/fr/index.html"><img src="../images/cergylogo.png" alt="Cergy université" height="120" width="250"></a>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="../td5/td5.php">TD n°5</a></li>
+			<li><a href="../td6/td6.php">TD n°6</a></li>
+			<li><a href="../td7/td7.php">TD n°7</a></li>
+			<li><a href="../td8/td8.php">TD n°8</a></li>
+			<li><a href="../td9/td9.php">TD n°9</a></li>
+			<li><a href="../td11/td11.php">TD n°10</a></li>
+			<li><a href="pageunderconstruction.html">TD n°11</a></li>	
+			<li><a href="pageunderconstruction.html">TD n°12</a></li>		
+		</ul>
+	</nav>
+	<div>
+	<p style="text-indent: 20px;font-style: italic;font-size: 20px;color: white;margin-left: 20%;"><strong>Page Web en cour de construction,En attendant vous trouverez des informations sur la page d'accueil</strong></p>
+		<figure style="margin-left: 25%;">
+			<a href="../index.html"><img src="../images/under.png" alt="under construction"/></a>
+			<figcaption style="font-size: 10px;margin-left: 2%;font-style: italic;font-size:22px;color: darkred;"><strong>veuillez clicker sur l'image pour revenir à la page d'accueil</strong></figcaption>
+		</figure>	
+	</div>
+	<footer>	
+		<p class="positionAuteurDate">Auteur : <strong>Ayad Ishak</strong></p>
+		<ul>
+			<li><a href="https://cours.u-cergy.fr/user/profile.php?id=8810"><img src="../images/cergy.png" height="30" width="30" alt="Cergy logo"></a></li>
+			<li><a href="mailto:ishakayad96@outlook.fr"><img src="../images/mailto.png" height="30" width="30" alt="mail"/></a></li>
+			<li><a href="https://www.facebook.com/profile.php?id=100009990018834"><img src="../images/facebook.png" height="30" width="30" alt="facebook"></a></li>	
+		</ul>
+	</footer>
+</body>
+</html>

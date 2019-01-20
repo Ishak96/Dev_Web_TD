@@ -1,0 +1,230 @@
+/***	mise en page	*/
+.page{
+	margin-left: 20px;
+	width: 400px;
+	border: 5px solid gray;
+	box-shadow: 2px 4px 3px black;
+}
+.border{	
+	border: 2px solid brown;
+	border-radius: 10px;
+	box-shadow: 2px 4px 3px brown;
+	margin: 270px;
+	padding-left: 0px;
+}
+.positionAuteurDate{
+	margin-top: 7px;
+	text-align: center;
+}
+.styleparag{
+	text-indent: 20px;
+	font-style: italic;
+	font-size: 18px;
+}
+.calancontainer{
+	margin-left: 80%;
+	margin-top: 1%;
+	position: absolute;
+	background-color: #0E8BCA;
+	padding: 2%;
+	border: 2px solid #424558;
+	height: 90%;
+	width: 15%;
+	box-shadow: 2px 3px 3px #424558;
+	font-family: sans-serif;
+	opacity: .7;
+}
+#imagecenter{
+	margin-left: 40%;
+}
+#legande{
+	font-size: 10px;
+	margin-left: 17px;
+	font-style: italic;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url('../images/back.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+/***	classes et modification pour les menu	*/
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+nav ul li a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+nav li{
+	list-style-type: none;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+nav ul li:hover a{
+	background-color: #000BE4;
+	color: black;
+	transform: scale(1,1);
+	box-shadow: 3px 3px 3px #000;
+}
+.menu ul{
+	position: fixed;
+	list-style-type: none;
+	padding-top: 0px;
+}
+.menu ul>li{
+	position: relative;
+}
+.submenu{
+	display: none;
+}
+.menu a{
+	display: inline-block;
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+.submenu li{
+	text-align: center;
+	position: fixed;
+	list-style-type: none;
+	padding-top: 0px;
+}
+.submenu li{
+	list-style-type: none;
+	padding: 10px;
+	position: relative;
+	width: 200px;
+	background-color: #2C3E50;
+	opacity: .8;
+}
+.submenu li a{
+	color: #FFF;
+	text-decoration: none;
+}
+.submenu li:hover{
+	background-color: #000BE4;
+	color: black;
+}
+/***	section et article	***/
+section{
+	padding-top: 5%;
+	margin-left: 20%;	
+}
+article{
+	background-color: white;
+	padding: 2%;
+	border: 2px solid #2C3E50;
+	height: 80%;
+	width: 60%;
+	box-shadow: 2px 3px 3px #2C3E50;
+	opacity: .9;
+}
+#lise li {
+	list-style-type: circle;
+	padding-bottom: 3%;
+}
+#hovereven table tr td:hover{
+	background-color: red;
+}
+#hovereven a{
+	text-decoration: none;
+	color: white;
+}
+#tableblue th{
+	background-color: #1E90FF;
+	color: black;
+}
+/***	le dessus de la page ***/
+footer{
+	background-color: #424558;
+	padding-bottom: 1%;
+	width: 100%;
+	height: 5%;	
+}
+footer ul{
+	margin-left: 30%;
+	list-style: none;
+}
+footer ul li{
+	padding-left: 10%;
+	display: inline-block;
+}
+table, th, td{
+	margin-left: 15%;
+	table-layout: fixed;
+	text-align: center;
+	font-size: 18px;
+}
+table, td, th { 
+	border: 1px solid gray 
+}
+th{
+	color: #424558;
+	background-color: white;
+}
+td{
+	color: white;
+	background-color: #424558;
+}
+.login{
+	margin: auto;
+	opacity: 0.7;
+	background-color: #424558;
+	border: 2px solid #7F7F7F;
+	border-radius: 5px;
+	width: 60%;
+}
+.login p{
+	color: white; 
+	text-align: justify;
+	width: 70%; 
+	margin-left: 15%; 
+	font-size: 15px;
+}
+.login label{
+	margin-left: 15%; 
+	border-radius: 600px 100px 100px 300px;
+	border-color: black;
+	background-color: white;
+}
+.login input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 2px solid black;
+	background: transparent;
+	outline: none;
+	font-weight: bold;
+	height: 30px;
+	width: 45%;
+}
+.login input[type="submit"]{
+	border-radius: 40px 0px 40px 0px;
+	border-color: black;
+	margin-left: 15%;
+	background-color: white;
+	font-weight: bold;
+}

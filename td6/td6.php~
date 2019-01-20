@@ -1,0 +1,181 @@
+<?php
+	include_once"../include/fonctions.inc.php";	
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>PHP - tests et boucles</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../css/style.css" />
+<?php
+	include_once"../include/util.inc.php";
+	echo applyStyle();
+	
+	echo check_cookies();
+?>
+<link rel="shortcut icon" href="../images/Web.png" type="images/png" />
+<style>
+.logoclass{
+	padding-top: 1%;
+	margin-left: 1%;
+	padding-bottom: 0%;
+}
+.logoclass h2{
+	font-size: 18px; 
+	color: white; 
+	margin-left: 40%;
+	position: absolute;
+	padding-top: 1%;
+	margin-top: 6%;
+	margin-left: 80%;
+}
+.logoclass h1{
+	color: white; 
+	margin-left: 27%;
+	position: absolute;
+	padding-top: 1%;
+}
+.center{
+	margin-left: 15%;
+}
+.verticalline{
+	background-color: red;
+	height: 10px;
+	width: 3px;
+}
+#imagecenter img{
+	margin-right: 30%;
+}
+section h2{
+	color: white;
+}
+.ascii table, th, td{
+	table-layout: fixed;
+	margin-left: 15%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+.ascii table{
+	border-bottom: 2px dashed black ;
+	border-left: 2px dashed black ;
+	border-top: 2px dashed black ;
+}
+.ascii table, td, th { 
+	width: 26px;
+	height: 30px;
+	font-weight: bold;
+}
+.ascii th, td{
+	border: 1px solid black ;
+	font-weight: bolder;
+}
+#plate td{
+	font-size: 12px;
+	width: 65px;
+	height: 17px;
+	font-style: normal;
+}
+#plate table{
+	border-left: 1px dashed black ;
+}
+.othercolor{
+	text-align: center;
+	color: black;
+}
+.colorblue{
+	text-align: center;
+	color: blue;
+	background-color: #DFDFEC;
+
+}
+.colorred{
+	text-align: center;
+	color: red;
+	background-color: #DFDFEC;
+}
+.colorgreen{
+	text-align: center;
+	color: green;
+	background-color: #DFDFEC;
+}
+</style>
+</head>
+<body>
+	<header id="head">
+		<div class="logoclass">
+			<h1>Développement Web :  PHP - tests et boucles</h1>
+			<h2>Les rendu de AYAD Ishak</h2>
+			<a href="https://www.u-cergy.fr/fr/index.html"><img src="../images/cergylogo.png" alt="Cergy université" height="120" width="250"></a>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="../td5/td5.php">TD n°5</a></li>
+			<li><a href="td6.php">TD n°6</a></li>
+			<li><a href="../td7/td7.php">TD n°7</a></li>
+			<li><a href="../td8/td8.php">TD n°8</a></li>
+			<li><a href="../td9/td9.php">TD n°9</a></li>
+			<li><a href="../td10/td10.php">TD n°10</a></li>
+			<li><a href="../td11/td11.php">TD n°11</a></li>	
+			<li><a href="../tds/pageunderconstruction.html">TD n°12</a></li>		
+		</ul>
+	</nav>
+	<div class="menu" id="manuposition">
+		<ul style="margin-top: 4%;">
+			<li style="background-color: transparent;"><a href="#"><img src="../images/home.png" alt="home" height="30" width="30"></a>
+				<ul class="submenu">
+					<li><a href="#exo1">Exercice n°1</a></li>
+					<li><a href="#exo2">Exercice n°2</a></li>
+				</ul>			
+			</li>
+		</ul>	
+	</div>
+	<section id="exo1"><h2 style="text-indent: 20px;font-style: italic;font-size: 18px;">Exercice n°1 :</h2>
+	<article style="height: 95%;width: 75%;"><h3 style="text-indent: 20px;font-style: italic;font-size: 22px;"> boucles, tests et styles internes :</h3>
+		<h3 style="text-indent: 20px;font-style: italic;font-size: 22px;">ASCII</h3>
+		<p class="styleparag"><strong>La norme ASCII est largement utilisée en informatique pour coder les caractères. 
+		Ce nom provient de l'acronyme anglais "American Standard Code for Information Interchange" qui signifie en français "Code américain normalisé pour l'échange d'information".</strong></p>
+		<p class="styleparag">L'ASCII est un norme de codage la plus répandue et compatible avec le plus de support. 
+		Il contient l'ensemble des caractères alphanumérique utilisé en anglais. 
+		Initialement codé sur 7 bits (plus un code de parité), 
+		l'ASCII étendu est néanmoins codé sous 8 bits dans le but d'ajouter des caractères
+		, tel que des caractères spéciaux et les lettres accentuée utilisée en français.</p>
+		<ul><li style="list-style-type: none; margin-left: 40%;"><a href="http://www.ascii-fr.com/"><img src="../images/ascii.png" height="30" width="50" alt="php logo"></a></li></ul>
+		<?php
+			echo asciiTabel();
+		?>
+		<p style="margin-left: 15%;font-style: italic;font-size: 13px;border-bottom: 1px solid black; width: 18%;">Illustration 1 : table ASCII</p>
+	</article>
+	</section>
+
+	<section id="exo2"><h2 style="text-indent: 20px;font-style: italic;font-size: 18px;">Exercice n°2 :</h2>
+	<article style="height: 95%;width: 75%;"><h3 style="text-indent: 20px;font-style: italic;font-size: 22px;">  boucles, tests et styles locaux  :</h3>
+	<h3 style="text-indent: 20px;font-style: italic;font-size: 22px;">Théorie des codes couleur HTML</h3>
+	<p class="styleparag">Vous vous demandez donc « Cette étrange combinaison de lettres et de chiffres a-t-elle un sens ? ». 
+	La réponse est oui, et voici l’explication :</p>
+	<h3 style="text-indent: 20px;font-style: italic;font-size: 18px;">Formats de codes HTML : </h3>
+	<p class="styleparag">Chaque code HTML contient le symbole "#" et 6 lettres ou chiffres. 
+	Ces numéros sont sous forme hexadécimale. Par exemple "FF" en hexadécimal représente le nombre 255 en décimal. </p>
+	<h3 style="text-indent: 20px;font-style: italic;font-size: 18px;">Signification des symboles :</h3>
+	<p class="styleparag">Les deux premiers du code couleur HTML représentent l’intensité de la couleur rouge. 00 est le minimum, 
+	est FF le plus intense. Les troisième et quatrième représentent l’intensité de vert, les cinquième et sixième celle de bleu. 
+	En combinant l’intensité de rouge, vert et bleu, on peut former n’importe quelle couleur</p>
+	<ul><li style="list-style-type: none; margin-left: 44%;"><a href="https://www.w3schools.com/colors/colors_names.asp"><img src="../images/color.png" height="30" width="30" alt="color logo"></a>	</li></ul>
+	<?php
+		echo safeWebPlate();
+	?>
+	<p style="margin-left: 0%;font-style: italic;font-size: 13px;border-bottom: 1px solid black; width: 18%;">Illustration 2 : palette web</p>
+	</article>
+	</section>
+	<footer>	
+		<p class="positionAuteurDate">Auteur : <strong>Ayad Ishak</strong></p>
+		<ul>
+			<li><a href="https://cours.u-cergy.fr/user/profile.php?id=8810"><img src="../images/cergy.png" height="30" width="30" alt="Cergy logo"></a></li>
+			<li><a href="mailto:ishakayad96@outlook.fr"><img src="../images/mailto.png" height="30" width="30" alt="mail"/></a></li>
+			<li><a href="https://www.facebook.com/profile.php?id=100009990018834"><img src="../images/facebook.png" height="30" width="30" alt="facebook"></a></li>	
+		</ul>
+	</footer>
+</body>
+</html>

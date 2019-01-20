@@ -1,0 +1,73 @@
+h1{
+    font-size: 30pt;
+    font-family: sans-serif;
+    color: azure;
+    font-style: oblique;
+    text-align: center;
+    background-color: blue;
+    text-shadow: 2px 2px 2px #333;
+}
+h2{
+    font-size: 20pt;
+    font-family: sans-serif;
+    text-indent : 20px;
+    color: blue;
+}
+h3{
+    font: 10pt;
+    font-family: sans-serif;
+    text-indent: 20px;
+}
+a{
+    font-size: 20pt;   
+}
+p{
+    font-size: 11pt;
+    font-family: sans-serif;
+    text-indent: 20px;
+}
+li{
+    font-size: 20pt;
+    color: midnightblue;
+    text-shadow: 1px 1px 1px #333;
+}
+body{
+    background-color: lightblue;
+}
+.imageSpecial1{
+float: right;
+}
+.menu ul {
+	padding: 10px;
+	margin: 0px;
+	list-style: none;
+	margin-left: 33%;
+}
+.menu ul li{
+	float: left;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	background-color: blue;
+	opacity: .8;
+	
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	
+}
+.menu ul li a:hover{
+	background-color: lightblue ;
+	color: blue;
+}
+
+.menu ul li:hover ul li{
+	display: block;
+}
+.pad{
+	padding-top: 30px;
+}

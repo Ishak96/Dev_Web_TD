@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Dévlopement</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="style.css" />
+    </head>
+    
+    <body>
+        
+        <h1>Dévelopement et Solution Java utilisé</h1>
+     <div class="menu">
+        	 <ul>
+				<li><a href="index.html">index</a></li> 	            		
+        		<li><a href="introduction.html">introduction</a></li>   
+        		<li><a href="conclusion.html">conclusion</a></li>
+        	</ul>
+    	</div>
+    	<div class="pad">
+        <h2>-Le Diagramme UML Utilisée pour la Solution : </h2>
+            
+        <p>
+                <img  src="images/SystemSolaire.png" title="Diagramme UML" width="700" height="700" alt="diagramme UML"/>
+        </p>
+        
+        <h2>-Les Solution utilisé pour géneré le SiteMap :</h2>
+        
+        <ul>
+        	<li>La Classe java.io.BufferedWriter : 
+             		<p>
+                    		La classe BufferedWriter écrit du texte vers un flux de sortie de caractéres,mettant en mémoire tampo les caractéres pour une écriture efficace de caractéres, de tableaux et de chaines de caractéres.
+             		</p>
+             	</li>
+             	
+            	<li>Le parcour du jeu de donnée : 
+            
+	                <p>
+        	            On parcourant le jeu de donnée d'une maniére recurssive on s'asure qu'on parcour dynamiquement notre jeu , on prendrenant  compte le fait que les données pourront être situées à un emplacement quelconque
+                	</p>
+            	</li>
+            
+        </ul>
+        
+        <h2>-Les Solution utilisé pour indexé le jeu de donnée :</h2>
+        
+        <ul>
+        	<li>La Classe Pattern : 
+        		<p>
+                        	<img class="imageSpecial1" src="images/PatternCompile.png" alt=""/>
+                        	La première étape est de définir le motif que l'on veut utiliser et créer une instance de la classe Pattern avec ce motif. La classe Pattern ne propose pas de constructeur, on obtient une instance de la classe grâce à la méthode de classe compile qui prend comme unique paramètre le motif sous forme d'un objet String.
+                
+                    	</p>
+                </li>
+                
+                <li>La Classe Matcher :
+                 	<p>
+                        	Une fois que le motif est compilé, il faut créer un objet de type Matcher pour interroger des chaines de caractères. La classe Matcher ne propose pas de constructeur non plus, on crée une instance de cette classe grâce à la méthode matcher de la classe Pattern. Cette méthode prend comme unique paramètre la chaine cible que l'on souhaite interroger. 
+                 	</p>
+                 </li>
+                
+                <li>La sérialization : 
+                	<p>
+                        	<img  class="imageSpecial1" src="images/Serialization.png" title="serialization d'un objet ArrayList" alt="serialisation"/>
+                        	c’est un mécanisme puissant de sauvegarde d’objet sur fichier. Pour qu’un objet soit se-rialisable, il faut que sa classe d’appartenance implemente l’interface java.io.Serializable, 
+                        	Et que l’ensemble de ses attributs soient eux-mêmes serialisabllaes. 
+ 
+                        	- on utilise la Serialization pour réaliser la Phase 2 du projet. - on a sauvegardé une java.util.ArrayList, pour une utilisation a n’importe quel instant t.    
+                 	</p>
+                </li>  
+        </ul>
+        
+        <h2>-Les Solution utilisé pour effectuer la recherche :</h2>
+       
+        <ul>	
+            <li>La déSérialization : </li>
+        </ul>
+        
+        <p>
+             <img class="imageSpecial1" src="images/Deserialization.png" title="Désérialization " alt=""/>
+     
+                    -on utilise la DéSerialization pour réaliser la Phase 3 du projet.
+                    -on récupere le contenu du fichier Sérializer de la Phase précedente on utilisant une ArrayList.puis on aplique notre algorithme de recherche sur notre ArrayList.
+        </p>
+    	</div>
+    </body>
+
+</html>
